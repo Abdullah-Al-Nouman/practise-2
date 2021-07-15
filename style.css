@@ -12,6 +12,8 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+
 /* ----------------------
 mouse hover part
 ------------------------ */
@@ -100,8 +102,12 @@ This is the design part of second section twelve players
  information with grid layout
  -------------------------------------------------------- */
 .section-title{
-    color: #562EFF;
-    font-size: 24px;
+    color:  grey;
+  
+    font-size: 50px;
+    text-align: center;
+    
+    
 }
 .top-players{
     /* top players div and hr line er majhe 30 px gap rakha hoise  */
@@ -146,22 +152,38 @@ resizing image of players
 .Football-Club{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 24px;
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
    
+}
+.club{
+    box-shadow: 5px 5px 5px #686161;
+    width: 300px;
+    height: 400;
+    margin: 14px;
+    border-radius: 10px;
+    padding-left: 15px;
 }
 
 
-.course-info{
+.club-info{
     display: flex;
 
     /* ratings er part k same line e anar jonno align items kora hoise */
     align-items: center;
-    justify-content: space-between;
+    padding-bottom: 20px;
    
 }
-.course .course-banner img{
-    width: 224px;
-    height: 104px;
+.club-title{
+    /* padding-left: 70px; */
+    text-align: center;
+    color: grey;
+    font-weight: 900;
+}
+.club .club-banner img{
+    width: 220px;
+    height: 180px;
+    padding-left: 30px;
 }
 
 
@@ -176,42 +198,51 @@ resizing image of players
 
 }
  .fa-star.empty{
-    color: #FFC014;
+    color: black;
 
 } 
-.club-duration{
-    background-color: rgba(224, 97, 97, 0.705);
-    border-radius: 10px;
-}
+
 
 
  /* --------------------
  blogs is parents of all articles -------------
  */
- .blogs{
+ .Top-Tournaments{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 24px;
+    grid-row-gap: 100px;
+    grid-column-gap: 100px;
  }
  /* .blog{
      /* display: flex; */
  /* }  */
- .blog-info{
-     margin-left: 16px;
- }
-.blog .thumbanil img{
-    width: 177px;
-    height: 117px;
+ .Trophy{
+    box-shadow: 5px 5px 8px #686161;
+    width: 300px;
+    height: 400;
+    margin: 14px;
+    border-radius: 10px;
+    padding-left: 15px;
 }
-.blog-title{
+ 
+ .Trophy-info{
+     text-align: center;
+     font-weight: 900;
+     color: grey;
+ }
+.Trophy .thumbanil img{
+    width: 220px;
+    height: 180px;
+    padding-left: 30px;
+}
+.section-title{
     font-size: 20px;
 }
-.blog-author{
+.Trophy-author{
     color: grey;
     font-size: 16px;
 }
-.blog-author a{
+.Trophy-author a{
     text-decoration: none;
     font-size: 16;
 }
