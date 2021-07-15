@@ -31,7 +31,7 @@ mouse hover part
  ------------------- */
  .half-width{
     width: 50%;
-    padding-left: 5%;
+
  }
  .top-ban{
      width: 1440px;
@@ -44,11 +44,17 @@ mouse hover part
     margin-bottom: 50px;
     
 }
+.photo-frame{
+    /* border: 2px solid black; */
+    margin-top: 120px;
+    overflow: hidden; 
+    
+}
    
  .top-ban img{
      width: 556px;
      height: 468;
-     
+    
  }
  .icon-button{
      background-color: #E02C6D;
@@ -58,6 +64,14 @@ mouse hover part
      padding-top: 10px;
      padding-left: 10px;
     
+ }
+ .icon-padding{
+    width: 50px;
+    height: 30px;
+     /* border: 2px solid black; */
+     padding-left: 400px;
+     padding-top: 20px;
+     
  }
  .child-of-top-banner{
      width: 50%;
@@ -78,14 +92,7 @@ mouse hover part
      font-weight: 700;
 
  }
- .icon-padding{
-     height: 100px;
-     width: 100px;
-     /* border: 2px solid black; */
-     padding-left: 400px;
-     padding-top: 20px;
-     
- }
+
 
 
 
@@ -213,9 +220,7 @@ resizing image of players
     grid-row-gap: 100px;
     grid-column-gap: 100px;
  }
- /* .blog{
-     /* display: flex; */
- /* }  */
+
  .Trophy{
     box-shadow: 5px 5px 8px #686161;
     width: 300px;
@@ -292,11 +297,11 @@ footer img{
      .container{
          width: 50%;
      }
-     .players, .blogs, .courses {
+     .players, .Top-Tournaments, .Football-Club {
          
          grid-template-columns: repeat(1, 1fr);
      }
-     .player, .blog{
+     .player, .Trophy{
          flex-direction: column;
      }
      
@@ -308,10 +313,10 @@ footer img{
     .container{
         width: 50%;
     }
-     .players, .blogs, .courses{
+     .players, .Top-Tournaments, .Football-Club{
          grid-template-columns: repeat(2, 1fr);
      }
-     .player, .blog{
+     .player, .Trophy{
         flex-direction: column;
     }
      
