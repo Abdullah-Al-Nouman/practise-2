@@ -1,0 +1,290 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ----------------------
+mouse hover part
+------------------------ */
+.photo-frame:hover .photo{
+
+ /* zooming 15% using scale */
+
+    transform: scale(1.5) ;
+    transition: transform 2s ease-in-out;
+}
+
+
+/*----------------------------
+ banner part design
+ ------------------- */
+ .half-width{
+    width: 50%;
+    padding-left: 5%;
+ }
+ .top-ban{
+     width: 1440px;
+     height: 650px;
+    background-color: #2D25A0;
+
+}
+.flexible{
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+   
+ .top-ban img{
+     width: 556px;
+     height: 468;
+     
+ }
+ .icon-button{
+     background-color: #E02C6D;
+     border-radius: 10px;
+     width: 100px;
+     height: 30px;
+     padding-top: 10px;
+     padding-left: 10px;
+    
+ }
+ .child-of-top-banner{
+     width: 50%;
+     margin: 207px,102px,240px,156px;
+     /* border: 3px solid black; */
+     padding: 50px;
+ }
+ .box-design{
+     height: 300px;
+     width: 300px;
+     /* border: 4px solid black; */
+     margin-top: 100px;
+     margin-left: 70px;
+ }
+ .header-design{
+     color: white;
+     font-size: 44px;
+     font-weight: 700;
+
+ }
+ .icon-padding{
+     height: 100px;
+     width: 100px;
+     /* border: 2px solid black; */
+     padding-left: 400px;
+     padding-top: 20px;
+     
+ }
+
+
+
+
+
+.container{
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+/* ------------------------------------------------------
+This is the design part of second section twelve players
+ information with grid layout
+ -------------------------------------------------------- */
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+}
+.top-players{
+    /* top players div and hr line er majhe 30 px gap rakha hoise  */
+    margin-bottom: 30px;
+}
+.player{
+    box-shadow: 5px 5px 5px #686161;
+    width: 330px;
+    height: 474;
+    margin: 14px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+/* top player style */
+.players{
+    display: grid;
+
+    /* 3 column defined */
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+
+/* --------------------------
+resizing image of players 
+-----------------------------*/
+.player img{
+    width: 310px;
+    height: 250px;
+    margin: 10px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+
+
+/* -----------------
+3rd section design part
+---------------------- */
+.Football-Club{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+   
+}
+
+
+.course-info{
+    display: flex;
+
+    /* ratings er part k same line e anar jonno align items kora hoise */
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+
+/* ratngs part design */
+
+.fa-star{
+  font-size: 12px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+
+}
+ .fa-star.empty{
+    color: #FFC014;
+
+} 
+.club-duration{
+    background-color: rgba(224, 97, 97, 0.705);
+    border-radius: 10px;
+}
+
+
+ /* --------------------
+ blogs is parents of all articles -------------
+ */
+ .blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 24px;
+ }
+ /* .blog{
+     /* display: flex; */
+ /* }  */
+ .blog-info{
+     margin-left: 16px;
+ }
+.blog .thumbanil img{
+    width: 177px;
+    height: 117px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: grey;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16;
+}
+
+/* ----------------------
+    footer design
+------------------- */
+.design-footer{
+    width: 483px;
+    height: 200px;
+    
+    margin-top: 100px;
+   
+}
+footer img{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+   
+}
+.icon-size{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.design-footer-child{
+    margin-bottom: 20px;
+    padding-left: 70px;
+    
+    
+}
+.copyright-design{
+    font-size: 18px;
+    font-weight: 400;
+}
+    
+
+
+/*-----------------------------
+ media quaries
+ ----------------------------- */
+
+ /* ----------------------
+      for mobile devices
+ ------------------------- */
+ @media only screen and (max-width:688px) {
+     .container{
+         width: 50%;
+     }
+     .players, .blogs, .courses {
+         
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .player, .blog{
+         flex-direction: column;
+     }
+     
+ }
+ /*--------------------
+     for tablet devices
+  --------------------*/
+ @media only screen and (min-width: 688px) and (max-width:992px){
+    .container{
+        width: 50%;
+    }
+     .players, .blogs, .courses{
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .player, .blog{
+        flex-direction: column;
+    }
+     
+ }
+
+
+
